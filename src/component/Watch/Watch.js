@@ -1,5 +1,7 @@
 import React from 'react';
 import './Watch.css'
+import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Watch = (props) => {
     const {getOrder,watch} = props;
    const {id, name, picture, price} = watch;
@@ -15,7 +17,8 @@ const Watch = (props) => {
           <p> Price : {price}</p> 
          </div>
           </div>
-          <button onClick={()=> getOrder(watch)} className='btn-addToCart'>AdToCart</button>
+          <button onClick={()=> getOrder(watch)} className='btn-addToCart'>
+          AdToCart   <FontAwesomeIcon icon={faShoppingCart}/> </button>
         </div>
     );
 };
