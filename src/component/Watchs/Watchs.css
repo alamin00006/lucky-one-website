@@ -1,0 +1,14 @@
+.full-display{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.watches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.order-summary{
+    background-color: rgba(199, 202, 201, 0.719);
+    position: sticky;
+}
