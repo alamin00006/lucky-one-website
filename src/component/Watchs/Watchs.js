@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import OrderSummary from '../OrderSummary/OrderSummary';
+import Random from '../Random/Random';
 
 import Watch from '../Watch/Watch';
 import './Watchs.css'
@@ -12,7 +13,7 @@ const Watchs = () => {
         
     const getRandom = (wattch) =>{
      const random = (Math.floor(Math.random()*wattch.length));
-        setRandom(random);
+     setRandom(random);
    
     }
 
@@ -26,6 +27,7 @@ const Watchs = () => {
         .then(data =>setWatchs(data))
     }, [])
 
+  
     return (
         <div className='full-project'>
             <h1 className='title'>My Watches Shopping Store</h1>
@@ -45,8 +47,8 @@ const Watchs = () => {
             <div className='order-summary'>
 
                <OrderSummary  getRandom ={getRandom} wattch = {wattch}></OrderSummary>
-               <h1>{random} : Number Has Been selected</h1>
-              
+               <Random random = {random}></Random>
+             
                 </div>
               
         </div>
