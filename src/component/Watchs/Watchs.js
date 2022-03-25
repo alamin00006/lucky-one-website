@@ -27,23 +27,29 @@ const Watchs = () => {
     }, [])
 
     return (
-        <div className='full-display'>
+        <div className='full-project'>
+            <h1 className='title'>My Watches Shopping Store</h1>
+            <div className='full-display container'>
+            
             <div className='watches'>
-            {
-                watchs.map(watch =><Watch 
-                    watch = {watch} key = {watch.id}
-                    getOrder ={getOrder}
-                     ></Watch>)
-            }
+            
+                 {
+                        watchs.map(watch =><Watch 
+                            watch = {watch} key = {watch.id}
+                            getOrder ={getOrder}
+                             ></Watch>)
+                   }
+               
             </div>
            
             <div className='order-summary'>
 
                <OrderSummary  getRandom ={getRandom} wattch = {wattch}></OrderSummary>
-               <h1>number:{random} selected</h1>
+               <h1>{random} : Number Has Been selected</h1>
               
                 </div>
               
+        </div>
         </div>
     );
 };

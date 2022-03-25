@@ -15,7 +15,7 @@ const OrderSummary = (props) => {
             }
   
             </div>
-            <button onClick = { () =>getRandom(wattch)}>Choose 1 For me</button>
+            <button className='btn bg-info' onClick = { () =>getRandom(wattch)}>Choose 1 For me</button>
         </div>
        
     );
