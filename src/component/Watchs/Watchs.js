@@ -45,8 +45,9 @@ const Watchs = () => {
            
             <div className='order-summary'>
 
-               <OrderSummary  getRandom ={getRandom} mywattch = {mywattch}></OrderSummary>
+               <OrderSummary getRandom ={getRandom} mywattch = {mywattch}></OrderSummary>
                <Random random = {random}></Random>
+               
              
                 </div>
               

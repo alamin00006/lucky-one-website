@@ -17,6 +17,7 @@ const OrderSummary = (props) => {
   
             </div>
             <button onClick = { () =>getRandom(randomly)}>Choose 1 For me</button>
+            
         </div>
        
     );
