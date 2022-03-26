@@ -1,11 +1,7 @@
 import React from 'react';
 import './Random.css'
 const Random = ({random}) => {
-  // for(const rando in random){
-  //   console.log(rando.name)
-  // }
-   
-    return (
+      return (
          
         
         <div className='random'>

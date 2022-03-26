@@ -6,7 +6,7 @@ import Watch from '../Watch/Watch';
 import './Watchs.css'
 const Watchs = () => {
     const [watchs, setWatchs] = useState([]);
-    const [wattch, setWatch] = useState([])
+    const [mywattch, setWatch] = useState([])
     const [random, setRandom] = useState([]);
 
     const getRandom = (names) =>{
@@ -17,7 +17,7 @@ const Watchs = () => {
     }
 
     const getOrder = (watch) =>{
-        const newWatch = [...wattch, watch];
+        const newWatch = [...mywattch, watch];
         setWatch(newWatch);
     }
     useEffect(() =>{
@@ -45,7 +45,7 @@ const Watchs = () => {
            
             <div className='order-summary'>
 
-               <OrderSummary  getRandom ={getRandom} wattch = {wattch}></OrderSummary>
+               <OrderSummary  getRandom ={getRandom} mywattch = {mywattch}></OrderSummary>
                <Random random = {random}></Random>
              
                 </div>
