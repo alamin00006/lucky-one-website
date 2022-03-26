@@ -1,7 +1,4 @@
-/* .full-project{
-  
-    
-} */
+
 .title{
    text-align: center;
    color: blueviolet;
@@ -27,3 +24,12 @@
     border-radius: 20px;
 
 }
+@media only screen and (max-width:688px) {
+.full-display{
+    grid-template-columns: repeat(1, 1fr);
+}
+.watches{
+    grid-template-columns: repeat(1, 1fr);
+}
+};
+

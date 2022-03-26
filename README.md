@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# My Watches Shopping Store
+This is My Project
+Open [https://my-watch-store.netlify.app/](https://my-watch-store.netlify.app/) to view it in your browser.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
