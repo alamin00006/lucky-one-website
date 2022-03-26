@@ -8,11 +8,10 @@ const Watchs = () => {
     const [watchs, setWatchs] = useState([]);
     const [wattch, setWatch] = useState([])
     const [random, setRandom] = useState([]);
-    
-   
-        
-    const getRandom = (wattch) =>{
-     const random = (Math.floor(Math.random()*wattch.length));
+
+    const getRandom = (names) =>{
+  
+     const random = Object.values(names)[Math.floor(Math.random()*Object.values(names).length)]
      setRandom(random);
    
     }

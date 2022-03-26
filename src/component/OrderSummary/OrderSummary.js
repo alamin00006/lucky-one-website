@@ -3,8 +3,12 @@ import './OrderSummary.css'
 
 const OrderSummary = (props) => {
     const {wattch, getRandom} = props;
-    // console.log( Math.random(wattch));
+   
+ const randomly = wattch.map(name => name.name)
+//   console.log(randomly)
   
+
+    
     return (
         <div className='order-summary'>
             <h2>Selected Items : {wattch.length}</h2>
@@ -15,10 +19,11 @@ const OrderSummary = (props) => {
             }
   
             </div>
-            <button className='btn bg-info' onClick = { () =>getRandom(wattch)}>Choose 1 For me</button>
+            <button className='btn bg-info' onClick = { () =>getRandom(randomly)}>Choose 1 For me</button>
         </div>
        
     );
+    
 };
 
 export default OrderSummary;

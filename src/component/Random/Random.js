@@ -1,13 +1,16 @@
 import React from 'react';
 import './Random.css'
 const Random = ({random}) => {
-    console.log(random)
+  // for(const rando in random){
+  //   console.log(rando.name)
+  // }
+   
     return (
          
         
         <div className='random'>
          
-          <h1>Number :{random} has been selected</h1>
+          <h1>Name :<small className='text-danger'>{random}</small> has been selected</h1>
         </div>
     );
 };
